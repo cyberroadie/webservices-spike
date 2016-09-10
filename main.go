@@ -17,5 +17,5 @@ func main() {
 	// static files
 	http.Handle("/", http.FileServer(http.Dir("webroot/public")))
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8081", nil))
 }
